@@ -3,14 +3,12 @@ Option Infer On
 Option Strict On
 
 #Region " --------------->> Imports "
-
 Imports System.Text
-Imports BCW.Foundation.ActiveDirectory.ActiveDirectoryHandling.Core
-Imports BCW.Foundation.ActiveDirectory.ActiveDirectoryHandling.Grants
-Imports BCW.WebServices.GrantServiceLibrary.Core.Interfaces
-Imports BCW.Foundation.ActiveDirectory.ActiveDirectoryHandling.Core.Enums
-Imports BCW.Foundation.ActiveDirectory.ActiveDirectoryHandling.Grants.Enums
-
+Imports SSP.ActiveDirectoryX.Core
+Imports SSP.ActiveDirectoryX.Grants
+Imports SSP.WebServices.GrantServiceLibrary.Core.Interfaces
+Imports SSP.ActiveDirectoryX.Core.Enums
+Imports SSP.ActiveDirectoryX.Grants.Enums
 #End Region
 
 Namespace Core

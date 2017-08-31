@@ -129,9 +129,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Tests\GroupManagerTest.vb" />
     <Compile Include="Tests\GrantTest.vb" />
     <Compile Include="Tests\GrantUserTest.vb" />
+    <Compile Include="Tests\GroupManagerTest.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

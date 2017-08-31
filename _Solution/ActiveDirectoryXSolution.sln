@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ActiveDirectoryX", "..\ActiveDirectoryX\ActiveDirectoryX.vbproj", "{835213E8-71D5-4631-BD95-E72869B86FFE}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AdQueryShell", "..\ConsoleTestApp\AdQueryShell.vbproj", "{79A00A13-CE05-4E49-95E6-91FC60A696C1}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AdQueryShell", "..\AdQueryShell\AdQueryShell.vbproj", "{79A00A13-CE05-4E49-95E6-91FC60A696C1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSP", "SSP", "{C43ED3D2-681C-4566-9134-9A8C3722E540}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "StatementBuildersBase", "..\..\Data\StatementBuilders\StatementBuildersBase\StatementBuildersBase\StatementBuildersBase.vbproj", "{D61CD833-CB17-470B-9D4C-D42B75FF07F4}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Base", "..\..\Base\Base\Base.vbproj", "{752E8911-60E4-4CEA-BF25-99411A134103}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSP.WebServices", "SSP.WebServices", "{4EDB2ECC-B996-46E4-97DC-FE490B6A20FF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GrantServiceLibrary", "..\GrantServiceLibrary\GrantServiceLibrary.vbproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +78,14 @@ Global
 		{752E8911-60E4-4CEA-BF25-99411A134103}.Release|Any CPU.Build.0 = Release|Any CPU
 		{752E8911-60E4-4CEA-BF25-99411A134103}.Release|x86.ActiveCfg = Release|x86
 		{752E8911-60E4-4CEA-BF25-99411A134103}.Release|x86.Build.0 = Release|x86
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|x86.ActiveCfg = Debug|x86
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|x86.Build.0 = Debug|x86
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|x86.ActiveCfg = Release|x86
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +97,7 @@ Global
 		{D3F2B589-EDAF-471B-8A15-55D3A90FAE2B} = {C43ED3D2-681C-4566-9134-9A8C3722E540}
 		{D61CD833-CB17-470B-9D4C-D42B75FF07F4} = {C43ED3D2-681C-4566-9134-9A8C3722E540}
 		{752E8911-60E4-4CEA-BF25-99411A134103} = {C43ED3D2-681C-4566-9134-9A8C3722E540}
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {4EDB2ECC-B996-46E4-97DC-FE490B6A20FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79DD0999-727B-4735-986B-A758FBAA8844}
