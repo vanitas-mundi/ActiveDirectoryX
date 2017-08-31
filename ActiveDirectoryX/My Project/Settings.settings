@@ -1,0 +1,107 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="smtpServerName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.100.13</Value>
+    </Setting>
+    <Setting Name="AdministrationDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=BCW</Value>
+    </Setting>
+    <Setting Name="GrantsDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Applikationen,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="RolesDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Rollen,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="DepartmentRolesDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Abteilungsrollen,OU=Rollen,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="ApplicationRolesDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Applikationsrollen,OU=Rollen,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="BaseRolesDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Basisrollen,OU=Rollen,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="ExtraRolesDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Extrarollen,OU=Rollen,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="TeamRolesDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Teamrollen,OU=Rollen,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="DenialRolesDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Verweigerungsrollen,OU=Rollen,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="HolidayGroupsDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Urlaubsgruppen,OU=Organisation,OU=BCW</Value>
+    </Setting>
+    <Setting Name="WorkGroupsDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Arbeitsgruppen,OU=Organisation,OU=BCW</Value>
+    </Setting>
+    <Setting Name="AccountingGroupsDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Abrechnungsgruppen,OU=Organisation,OU=BCW</Value>
+    </Setting>
+    <Setting Name="GroupManagersDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Gruppenmanager,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="OrganizationGroupsDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Organisation,OU=BCW</Value>
+    </Setting>
+    <Setting Name="UsersContainerDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CN=Users,DC=bcw-intern,DC=local</Value>
+    </Setting>
+    <Setting Name="ExchangeDatabaseNames" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Standorte_NORD_Postachspeicher&lt;/string&gt;
+  &lt;string&gt;Standorte_NRW_Postachspeicher&lt;/string&gt;
+  &lt;string&gt;Standorte_SUED_Postachspeicher&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ExchangePowershellUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://mail.bildungscentrum.de/Powershell?serializationLevel=Full</Value>
+    </Setting>
+    <Setting Name="ExchangePowershellSchema" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://schemas.microsoft.com/powershell/Microsoft.Exchange</Value>
+    </Setting>
+    <Setting Name="MappingsDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OU=Mappings,OU=Berechtigungen,OU=BCW</Value>
+    </Setting>
+    <Setting Name="ManipulationUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ad.manager@bcw-intern.local</Value>
+    </Setting>
+    <Setting Name="ManipulationUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">38mpztbcfrL3igfM0MMXNTRLPZflASRg</Value>
+    </Setting>
+    <Setting Name="UnixIdDistinguishedName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CN=bcw-intern,CN=ypservers,CN=ypServ30,CN=RPcServices,CN=System,dc=bcw-intern,dc=local</Value>
+    </Setting>
+    <Setting Name="PrimaryMailDomain" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">bcw-gruppe.de</Value>
+    </Setting>
+    <Setting Name="DomainAdminGroupId" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="DomainUserGroupId" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10001</Value>
+    </Setting>
+    <Setting Name="LdapProtocolName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">LDAP://</Value>
+    </Setting>
+    <Setting Name="AdoProviderName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ADSDSOObject</Value>
+    </Setting>
+    <Setting Name="StatementConditionsMaximum" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="GroupManagerPrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">cn=gruppenmanager.</Value>
+    </Setting>
+    <Setting Name="GroupManagersLdapQueryString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">(&amp;(objectClass=group)(&amp;(name=gruppenmanager.*)(managedBy=*)))</Value>
+    </Setting>
+    <Setting Name="GroupManagersOfAdminGroupsLdapQueryString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">(&amp;(objectClass=group)(&amp;(!name=gruppenmanager.*)(managedBy=*)))</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

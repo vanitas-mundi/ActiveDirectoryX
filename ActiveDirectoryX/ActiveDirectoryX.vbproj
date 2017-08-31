@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{835213E8-71D5-4631-BD95-E72869B86FFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SSP.ActiveDirectoryX</RootNamespace>
+    <AssemblyName>ActiveDirectoryX</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ActiveDirectoryX.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ActiveDirectoryX.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>strong_name_key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\_Solution\packages\NUnit.3.0.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\WindowsPowerShell\3.0\System.Management.Automation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\AdInformation.vb" />
+    <Compile Include="Core\DistinguishedName.Factories.vb" />
+    <Compile Include="Core\DistinguishedNameBasProperties.vb" />
+    <Compile Include="Core\Enums\GetMembersRecursiveTypes.vb" />
+    <Compile Include="Core\Enums\AdMainpulationResults.vb" />
+    <Compile Include="Core\Enums\AdProperties.vb" />
+    <Compile Include="Core\Enums\ExchangeParameters.vb" />
+    <Compile Include="Core\Enums\ObjectClasses.vb" />
+    <Compile Include="Core\AdTree.vb" />
+    <Compile Include="Core\AdNode.vb" />
+    <Compile Include="Core\AdNodes.vb" />
+    <Compile Include="Core\Exceptions\GenerateMailBoxException.vb" />
+    <Compile Include="Core\Manipulation\AdGroups.vb" />
+    <Compile Include="Core\AdTypeConverter.vb" />
+    <Compile Include="Core\Manipulation\AdOrganizationalUnits.vb" />
+    <Compile Include="Core\Manipulation\AdUsers.vb" />
+    <Compile Include="Core\Enums\LoginResults.vb" />
+    <Compile Include="Core\Enums\SpecialDistinguishedNameKeys.vb" />
+    <Compile Include="Core\SpecialDistinguishedNames.vb" />
+    <Compile Include="Core\Enums\UserAccountControlTypes.vb" />
+    <Compile Include="Grants\Enums\ApplicationGrantNames\BuchunganenderungsmelderGrantNames.vb" />
+    <Compile Include="Grants\Enums\ApplicationGrantNames\DigaZweitdurchsichtGrantNames.vb" />
+    <Compile Include="Grants\Enums\ApplicationGrantNames\DigitalerAntragGrantNames.vb" />
+    <Compile Include="Grants\Enums\ApplicationGrantNames\HochschulStatistikGrantNames.vb" />
+    <Compile Include="Grants\Enums\ApplicationGrantNames\IdCardGrantNames.vb" />
+    <Compile Include="Grants\Enums\ApplicationGrantNames\PruefungseinsichtTerminplanerGrantNames.vb" />
+    <Compile Include="Grants\Enums\ApplicationGrantNames\IdCardAbrechnungGrantNames.vb" />
+    <Compile Include="Grants\Enums\ApplicationGrantNames\TitleManagementGrantNames.vb" />
+    <Compile Include="Data\AdRepositoryHelper.vb" />
+    <Compile Include="Grants\GrantsManager.vb" />
+    <Compile Include="Data\Repositories\DistinguishedNameRepository.vb" />
+    <Compile Include="Grants\Administration\OrganizationalUnitAdministration.vb" />
+    <Compile Include="Grants\Administration\RemoveFromAllGroupsErrorValue.vb" />
+    <Compile Include="Grants\Administration\RemoveFromAllGroupsReturnValue.vb" />
+    <Compile Include="Grants\Enums\FillTypes.vb" />
+    <Compile Include="Grants\Enums\TreeBuilderRootLineTypes.vb" />
+    <Compile Include="Grants\Exceptions\TreeBuilderRootLinesNotCustomType.vb" />
+    <Compile Include="Grants\GrantsManagerBase.vb" />
+    <Compile Include="Grants\GrantsManagerBaseRoutines.vb" />
+    <Compile Include="Grants\Interfaces\IGrantsManagerBase.vb" />
+    <Compile Include="Grants\OrganizationalUnit.vb" />
+    <Compile Include="Grants\OrganizationalUnits.vb" />
+    <Compile Include="Grants\AdministrationTypeResolver.vb" />
+    <Compile Include="Grants\Administration\OrganizationalUnitsAdministration.vb" />
+    <Compile Include="Grants\Administration\Administrations.vb" />
+    <Compile Include="Grants\Administration\AdministrationGroupsAdministration.vb" />
+    <Compile Include="Grants\Administration\GrantsAdministration.vb" />
+    <Compile Include="Grants\Administration\GrantTablesAdministration.vb" />
+    <Compile Include="Grants\Administration\GrantUserAdministration.vb" />
+    <Compile Include="Grants\Administration\Extensions\GrantUserExtentionMethods.vb" />
+    <Compile Include="Grants\Administration\GrantUsersAdministration.vb" />
+    <Compile Include="Grants\Administration\GroupManagerAdministration.vb" />
+    <Compile Include="Grants\Administration\GroupManagersAdministration.vb" />
+    <Compile Include="Grants\Administration\GrantGroupsAdministration.vb" />
+    <Compile Include="Grants\Administration\OrganizationGroupsAdministration.vb" />
+    <Compile Include="Grants\Administration\RolesAdministration.vb" />
+    <Compile Include="Grants\Administration\MappingsAdministration.vb" />
+    <Compile Include="Grants\Enums\GrantTypes.vb" />
+    <Compile Include="Grants\AdministrationGroup.vb" />
+    <Compile Include="Grants\AdministrationGroups.vb" />
+    <Compile Include="Grants\Administration\AdministrationGroupAdministration.vb" />
+    <Compile Include="Grants\Exceptions\PersonIdNotExistsException.vb" />
+    <Compile Include="Grants\Exceptions\GrantTableIsNullException.vb" />
+    <Compile Include="Grants\GroupManagers.vb" />
+    <Compile Include="Grants\GroupTree.vb" />
+    <Compile Include="Grants\Mapping.vb" />
+    <Compile Include="Grants\Mappings.vb" />
+    <Compile Include="Grants\GrantUser.vb" />
+    <Compile Include="Grants\GroupManager.vb" />
+    <Compile Include="Grants\Enums\OrganizationGroupTypes.vb" />
+    <Compile Include="Grants\Grant.vb" />
+    <Compile Include="Grants\GrantTable.vb" />
+    <Compile Include="Grants\GrantTables.vb" />
+    <Compile Include="Grants\GrantTree.vb" />
+    <Compile Include="Grants\Enums\GrantValues.vb" />
+    <Compile Include="Core\AdPrincipals.vb" />
+    <Compile Include="Core\Manipulation\AdUserInfo.vb" />
+    <Compile Include="Core\Settings.vb" />
+    <Compile Include="Core\DistinguishedName.vb" />
+    <Compile Include="Grants\GrantGroups.vb" />
+    <Compile Include="Grants\Roles.vb" />
+    <Compile Include="Grants\Interfaces\IGrantTable.vb" />
+    <Compile Include="Grants\Interfaces\IGrantTables.vb" />
+    <Compile Include="Grants\OrganizationGroups.vb" />
+    <Compile Include="Grants\Exceptions\WrongAdministrationTypeException.vb" />
+    <Compile Include="Grants\TreeBuilderRootLines.vb" />
+    <Compile Include="Grants\TreeBuilder.vb" />
+    <Compile Include="Grants\GroupManagerBaseProperties.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="strong_name_key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documents\Links.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\Base\Base.vbproj">
+      <Project>{752e8911-60e4-4cea-bf25-99411a134103}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\StatementBuilders\StatementBuildersAD\StatementBuildersAD.vbproj">
+      <Project>{d3f2b589-edaf-471b-8a15-55d3a90fae2b}</Project>
+      <Name>StatementBuildersAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\StatementBuilders\StatementBuildersBase\StatementBuildersBase\StatementBuildersBase.vbproj">
+      <Project>{d61cd833-cb17-470b-9d4c-d42b75ff07f4}</Project>
+      <Name>StatementBuildersBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

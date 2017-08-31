@@ -1,0 +1,8 @@
+﻿http://www.ldapclient.com/ldapplusadhelp/index.jsp
+http://www.rlmueller.net/SQLSyntax.htm
+http://www.codeproject.com/Articles/18102/Howto-Almost-Everything-In-Active-Directory-via-C
+
+http://blog.dikmenoglu.de/2008/06/objektdelegierungen-einrichten/
+
+'Soll super sein!!!
+http://www.codeproject.com/Articles/18102/Howto-Almost-Everything-In-Active-Directory-via-C
